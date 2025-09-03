@@ -7,7 +7,7 @@ public class Fly : MonoBehaviour
 {
     [Header("Movimentação")]
 
-    public float forwardForce = 10f;  // Força constante para frente
+    public float forwardForce = 100f;  // Força constante para frente
 
     private Rigidbody rb;
     public bool forwardForceInput;
@@ -22,30 +22,35 @@ public class Fly : MonoBehaviour
     }
 
 
+  
+
 
 
     void Update()
     {
  
 
-        if (Input.GetButton("Action") && forwardForceInput == false)
+
+
+
+        if (Input.GetButton("Action")&&forwardForceInput==false)
         {
 
-            StartCoroutine(ApplyForwardForce2());
+          
+          StartCoroutine(ApplyForwardForce2());
 
         }
+            }
 
 
 
 
-
-    }
 
 
     IEnumerator ApplyForwardForce2()
     {
         forwardForceInput = true;
-        rb.AddRelativeForce(Vector3.left * forwardForce, ForceMode.Impulse);
+        rb.AddRelativeForce(Vector3.left * forwardForce, ForceMode.Force);
         rb.useGravity = true;
 
         yield return new WaitForSeconds(0.3f);
