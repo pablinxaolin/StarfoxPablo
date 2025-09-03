@@ -298,7 +298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632468681}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 6.6000004, y: 13.1, z: -20.7}
+  m_LocalPosition: {x: 40.3, y: 13.1, z: -20.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -350,21 +350,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1564016110}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1027966111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027966109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d5a328235e1d4d0da132890fdf9e797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveForce: 10
-  forwardForce: 20
-  forwardForceInput: 0
 --- !u!64 &1027966112
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -404,10 +389,23 @@ BoxCollider:
   m_GameObject: {fileID: 1027966109}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 56.910004, y: 6.1199994, z: 32.840027}
   m_Center: {x: -44.399902, y: 9.66, z: -21.686584}
+--- !u!114 &1027966117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027966109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5a328235e1d4d0da132890fdf9e797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 100
 --- !u!1 &1263492772
 GameObject:
   m_ObjectHideFlags: 0

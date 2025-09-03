@@ -27,7 +27,7 @@ public class RotateObject : MonoBehaviour
         pitch = Mathf.Clamp(pitch, -80f, 80f);
 
         // cria a rotação combinada
-        Quaternion targetRotation = Quaternion.Euler(pitch, yaw, 0f);
+        Quaternion targetRotation = Quaternion.Euler(0f, yaw, pitch);
         rb.MoveRotation(targetRotation);
     }
 }
